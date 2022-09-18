@@ -2,5 +2,20 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: ifyoma1-cluster
+  name: udagram-cluster
   region: us-east-1
+
+# vpc:
+#   cidr: 10.10.0.0/16
+#   autoAllocateIPv6: true
+#   # disable public access to endpoint and only allow private access
+#   clusterEndpoints:
+#     publicAccess: true
+#     privateAccess: true
+
+# cloudWatch:
+#     clusterLogging:
+#         # enable specific types of cluster control plane logs
+#         enableTypes: ["audit", "authenticator", "controllerManager"]
+#         # all supported types: "api", "audit", "authenticator", "controllerManager", "scheduler"
+#         # supported special values: "*" and "all"
